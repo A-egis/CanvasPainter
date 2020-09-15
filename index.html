@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas画板</title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2070625_6o6m6r2cuep.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="menu-container">
+        <ul class="menu">
+            <span class="tip">图形</span> 
+            <li class="menu-item active" id="pencil">
+                <i class="iconfont icon-pencil" title="画笔"></i>
+                <span class="title">画笔</span>
+            </li>
+            <li class="menu-item" id="rectangle">
+                <i class="iconfont icon-rectangle" title="矩形"></i>
+                <span class="title">矩形</span>
+            </li>
+            <li class="menu-item" id="circle">
+                <i class="iconfont icon-circle" title="圆形"></i>
+                <span class="title">椭圆</span>
+            </li>
+            <li class="menu-item" id="eraser">
+                <i class="iconfont icon-eraser" title="橡皮擦"></i>
+                <span class="title">橡皮擦</span>
+            </li>
+            <span class="tip">线条/橡皮擦 宽度</span> 
+            <Li class="menu-item active" id="narrow">
+                <i class="iconfont icon-narrow line" title="细"></i>
+                <span class="title">4px</span>
+            </Li>
+            <Li class="menu-item" id="normal">
+                <i class="iconfont icon-normal line" title="正常"></i>
+                <span class="title">8px</span>
+            </Li>
+            <Li class="menu-item" id="wide">
+                <i class="iconfont icon-wide line" title="宽"></i>
+                <span class="title">12px</span>
+            </Li>
+            <li class="menu-item">
+                <input type="color" name="color" id="color" title="颜色">
+                <span class="title">颜色</span>
+            </li>
+            <li class="menu-item" id="delete">
+                <i class="iconfont icon-delete" title="清空"></i>
+                <span class="title">清空</span>
+            </li>
+            <li class="menu-item" id="download">
+                <a href="#" download><i class="iconfont icon-download" title="保存"></i></a>
+                <span class="title">保存</span>
+            </li>
+        </ul>
+    </div>
+    <div class="content-container">
+        <canvas id="canvas" width="" height=""></canvas>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
